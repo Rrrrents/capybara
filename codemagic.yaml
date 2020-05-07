@@ -4,7 +4,7 @@
 workflows:
   yaml-workflow:
     name: YAML Workflow
-    max_build_duration: 121
+    max_build_duration: nan
     environment:
       flutter: stable
       xcode: latest
