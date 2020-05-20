@@ -2,7 +2,9 @@ workflows:
   emulator-test:
     name: Emulator test
     scripts:
-      - emulator @emulator -no-window -no-snapshot-save &
+      - |
+        emulator @emulator -no-window -no-snapshot-save &
+        sleep 1
 #      - ${ANDROID_HOME}/emulator/emulator -avd emulator -no-window -no-snapshot-save &
       - adb wait-for-device
       - sleep 1000
